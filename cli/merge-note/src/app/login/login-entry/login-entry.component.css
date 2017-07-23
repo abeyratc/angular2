@@ -1,0 +1,31 @@
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.valigner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.valigner-item {
+  max-width: 70%;
+}
+
+.valigner-item--top {
+  align-self: flex-start;
+}
+
+.valigner-item--bottom {
+  align-self: flex-end;
+}
+
+.login-page {
+  width: 360px;
+  padding: 2% 0 0;
+  margin: auto;
+  background: #ccc;
+}

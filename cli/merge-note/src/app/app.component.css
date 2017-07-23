@@ -1,0 +1,14 @@
+header, footer {
+    height: 70px;
+    padding: 10px;
+}
+
+header {
+    font-size: 3em;
+    text-align: center;
+}
+
+footer {
+    font-size: 1.2em;
+    text-align: left;
+}

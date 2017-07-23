@@ -1,0 +1,21 @@
+<div class="form-inline">
+	<div class="col-md-4">
+    	<label for="lartifact" class="control-label">Artifact<span class="required">*</span></label>
+		<select name="artifact" class="form-control" id="lartifact" [(ngModel)]="note.revision[idx].artifact" #artifact="ngModel">
+			<option *ngFor="let a of artifacts" [value]="a">{{a}}</option>
+		</select>
+    </div>
+    <div class="col-md-6">
+        <label for="lversions" class="control-label">Revision(s)<span class="required">*</span></label>
+		<input type="text" name="versions" class="form-control" id="lversions" [(ngModel)]="note.revision[idx].versions" #versions="ngModel"/>
+    </div>
+    <div class="col-md-2">
+        <div *ngIf="revisions.length > 1">
+			<a class="btn btn-outline-secondary" (click)="remove()" id="removeArtifact"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+		</div>
+    </div>
+</div>
+<br/>
+
+
+

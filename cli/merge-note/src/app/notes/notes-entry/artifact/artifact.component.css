@@ -1,0 +1,11 @@
+.form-inline label {
+	justify-content: flex-start;
+}
+
+.form-inline .form-control {
+	width: 100%;
+}
+
+#removeArtifact {
+	margin-top: 25px;
+}

@@ -1,0 +1,19 @@
+<form>
+	<div class="valigner login-page">
+		<div class="valigner-item">
+			<div class="form-group">
+				<p class="message">Enter your nwie credentials to log in.</p>
+				<div>
+					<input type="text" class="form-control" placeholder="Username" required [(ngModel)]="username" name="usernameEntry" #usernameEntry="ngModel" id="lusername"/>
+				</div>
+				<br/>
+				<div>
+					<input type="password" class="form-control" id="passwordEntry"  placeholder="password" required [(ngModel)]="password" name="passwordEntry" #passwordEntry="ngModel" id="lpassword"/>
+				</div>
+				<br/>
+				<button type="button" (click)="login()" class="btn btn-primary pull-right">login</button>
+				<br/><br/>
+			</div>
+		</div>
+	</div>
+</form>
